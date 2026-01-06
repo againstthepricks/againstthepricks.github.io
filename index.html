@@ -5,66 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toxic Bog — Coming Soon</title>
+  <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
 
-  <!-- Stripe Buy Button Script -->
-  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
+<stripe-buy-button
+  buy-button-id="buy_btn_1SmYUjFN1WjOoKnW8130hy3Q"
+  publishable-key="pk_live_51PTNoIFN1WjOoKnW5ujUOwMnK0ku2WomniK9dR9AEGwBFXGciKJOPKmRkb4NFH2WjQeOBjpNp3wEHQIa8VRpxgtl00VHd4QjoT"
+>
+</stripe-buy-button>
   <style>
-    body {
+      body {
       background-image: url('https://raw.githubusercontent.com/againstthepricks/againstthepricks.github.io/refs/heads/main/toxicbog.jpg');
       background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Ensures the image does not repeat */
       margin: 0;
-      height: 100vh;
-      text-align: center; /* centers inline content like images */
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* vertical centering */
-      align-items: center;     /* horizontal centering */
+      height: 100vh; /* Makes the body take up the full height of the viewport */
     }
-
     img {
       max-width: 400px;
       height: auto;
       border-radius: 10px;
       margin-bottom: 20px;
-      display: block; /* ensures it’s treated as a block */
     }
-
     h1 {
       font-size: 2em;
-      margin: 0 0 20px 0;
-      color: white; /* optional, make text visible on background */
-    }
-
-    /* Optional: center links */
-    a {
-      display: block;
-      margin: 10px auto;
-      text-align: center;
+      margin: 0;
     }
   </style>
 </head>
-
 <body>
-
-  <h1>Toxic Bog</h1>
-
-  <!-- Example: link with image centered -->
-  <a href="https://example.com">
-    <img src="dinosaur.png" alt="Dinosaur Link">
-  </a>
-
-  <!-- Stripe Buy Button centered -->
-  <stripe-buy-button
-    buy-button-id="buy_btn_1SmYUjFN1WjOoKnW8130hy3Q"
-    publishable-key="pk_live_51PTNoIFN1WjOoKnW5ujUOwMnK0ku2WomniK9dR9AEGwBFXGciKJOPKmRkb4NFH2WjQeOBjpNp3wEHQIa8VRpxgtl00VHd4QjoT">
-  </stripe-buy-button>
-
-</body>
-</html>
-
 
 
 </html>
